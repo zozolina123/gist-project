@@ -1,5 +1,6 @@
 export interface IGistData {
   description: string;
+  id: string;
   numberOfFiles: number;
   languages: string[];
   filesInfo: IFileInfo[];

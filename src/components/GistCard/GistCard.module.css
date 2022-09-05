@@ -6,6 +6,11 @@
   padding: 5px;
 }
 
+.card:hover {
+  background-color: #454754;
+  cursor: pointer;
+}
+
 .languageBadgeContainer {
   display: flex;
   justify-content: center;

@@ -23,6 +23,7 @@ export const mapGistsResponse = (gistsResponse: any) => {
     const filesInfo: any = Object.values(gist.files);
     mappedResponse.push({
       description: gist.description,
+      id: gist.id,
       languages: getLanguages(filesInfo),
       filesInfo,
       numberOfFiles: filesInfo.length,
