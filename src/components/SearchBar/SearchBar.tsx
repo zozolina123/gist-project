@@ -1,12 +1,12 @@
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent } from "react";
 import styles from "./SearchBar.module.css";
 
-const SearchBar: React.FC = () => {
-  const [input, setInput] = useState("");
-  const onChange = (e: FormEvent<HTMLInputElement>) => {
-    setInput(e.currentTarget.value);
-  };
+interface ISearchBar {
+  onChange: (e: FormEvent<HTMLInputElement>) => void;
+  input: string;
+}
 
+const SearchBar: React.FC<ISearchBar> = ({ onChange, input }) => {
   return (
     <div className={styles.searchBar}>
       <p>Username: </p>
