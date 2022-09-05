@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     fetchGist(username).then((mappedResponse) => {
-      console.log(mappedResponse);
       setGists(mappedResponse);
     });
   }, [username]);

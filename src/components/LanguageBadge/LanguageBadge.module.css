@@ -1,0 +1,8 @@
+.languageBadge {
+  font-size: 15px;
+  background-color: #00818a;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 5px 5px 10px 5px;
+  min-width: 50px;
+}

@@ -9,15 +9,16 @@ const GistList: React.FC<IGistList> = ({ gistsData }) => {
   const getGistCards = (gistsData: IGistData[]) =>
     gistsData.map((gistData: IGistData) => (
       <GistCard
-        fileName={gistData.fileName}
-        language={gistData.language}
-        forkedBy={gistData.forkedBy}
+        description={gistData.description}
+        languages={gistData.languages}
+        numberOfFiles={gistData.numberOfFiles}
       />
     ));
-  console.log(gistsData);
   return gistsData?.length ? (
     <div className={styles.gistList}>{getGistCards(gistsData)}</div>
-  ) : null;
+  ) : (
+    <h4>No gists found for this username</h4>
+  );
 };
 
 export default GistList;
