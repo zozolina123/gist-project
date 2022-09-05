@@ -1,0 +1,12 @@
+.gistList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 40%;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+}
