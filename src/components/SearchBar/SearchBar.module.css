@@ -1,7 +1,12 @@
-.gistList {
-  min-width: 90vw;
+.searchBar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.input {
+  padding: 2px;
+  margin: 5px;
+  font-size: 15px;
 }
