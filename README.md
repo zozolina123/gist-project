@@ -1,10 +1,19 @@
-# Getting Started with Create React App
+# React app that consumes Gist API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that consumes data from Gist API.  
+The documentation for Gist API can be found [here](https://docs.github.com/en/rest/gists).
 
-## Available Scripts
+## Technologies used
 
-In the project directory, you can run:
+React  
+Typescript
+
+## What can be improved
+- add unit tests
+- replace the use of any in typescript with the actual type
+- improve UI
+- add state management tools such as Redux
+- fetch forks when opening gist info 
 
 ### `yarn start`
 
